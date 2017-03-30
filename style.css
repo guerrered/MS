@@ -1,0 +1,33 @@
+h1{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+body{
+  background-color: gray;
+}
+
+table{
+  width: 100%;
+}
+
+th{
+  text-align: center;
+  padding: 8px;
+}
+
+td{
+  text-align:center;
+  background-color:skyblue;
+}
+
+td:nth-child(odd){
+  background-color:white;
+  color:black;
+}
+
+th{
+  background-color: lime;
+  color:black;
+}
