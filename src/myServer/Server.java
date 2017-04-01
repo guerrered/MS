@@ -11,9 +11,9 @@ import java.io.FileInputStream;
 
 public class Server {
 
-	//myLocation 129.89.130.91
+	//myLocation 
 	public static void main(String[] args)throws Exception{
-		HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+		HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 		server.createContext("/main",new StaticFileServer("main.html"));
 		server.createContext("/sub", new StaticFileServer("sub.html"));
 		server.createContext("/style.css", new StaticFileServer("style.css"));

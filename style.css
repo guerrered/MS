@@ -4,8 +4,12 @@ h1{
   text-align: center;
 }
 
+ #IS{
+  font-size: 30px;
+  color:black;
+}
 body{
-  background-color: gray;
+  background-color: white;
 }
 
 table{
@@ -27,7 +31,24 @@ td:nth-child(odd){
   color:black;
 }
 
+p{
+  color:black;
+}
 th{
   background-color: lime;
   color:black;
+}
+
+.show{
+  display:inline !important;
+}
+.hidden{
+  display:none;
+}
+
+button{
+  border: 2px solid black; background: #E5E4E2;
+  font-size: 1em; font-weight: bold; color: black;
+  padding: 1.1em 1.1em;
+  margin-top:.4em;
 }

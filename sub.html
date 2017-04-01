@@ -5,8 +5,1087 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css">
 </head>
 <body>
-<h1>SubPage</h1>
+<h1 id = "IS">SubPage</h1>
 <h1><a href = "/main">Go Back to Main </a></h1>
+<p id = "Hey">Greetings</p>
+
+<!--
+JAVASCRIPT DEMOS BELOW ||
+                       ||
+                      \  /
+                       \/
+
+<script id = "1">
+var yourName = prompt("What is your name?");
+if(yourName != null){
+  document.getElementByIf("sayHello").innerHTML = "Hello" + yourName;
+}else{
+  alert("Please enter a name next time");
+}
+</script>
+
+<script id = "2">
+var myName = "Ed";
+var myAge = 400;
+myName = 100;//this is fair
+
+document.write("5 + 4 = ", 5 + 4, "<br />");//print 5 + 4
+document.write("5 + 4 = " + 5 + 4, "<br />");// print 5 and 4 as well
+
+document.write("Max num = ", Number.MAX_VALUE, "<br />");//max val a num can hold
+document.write("Min num = ", Number.MIN_VALUE, "<br />");//Min
+
+precisionTest = .10000000000000001;
+document.write(precisionTest + 0.1000000000000001, "<br/>");
+document.write(precisionTest + 0.10000000000000001, "<br/>");//17 vals rounded off
+
+var balance = 1563.87;
+document.write("Monthly Payment: ", (balance/12).toFixed(2), "<br />");
+
+var randNum = 5;
+document.write("randNum++ = ", randNum++, "<br />");
+document.write("++randNum = ", ++randNum, "<br />");
+document.write("randNum += 5 = ", randNum+=5, "<br />");
+
+document.write("Math.E = ", Math.E, "<br />");
+document.write("Math.PI = ", Math.PI, "<br />");
+document.write("Math.abs(-8) = ", Math.abs(-8), "<br />");
+document.write("Math.cbrt(1000) = ", Math.cbrt(1000), "<br />");
+document.write("Math.ceil(6.45) = ", Math.ceil(6.45), "<br />");
+document.write("Math.floor(6.45) = ", Math.floor(6.45), "<br />");
+document.write("Math.round(6.45) = ", Math.round(6.45), "<br />");
+document.write("Math.log(10) = ", Math.log(10), "<br />");//log 2
+document.write("Math.log10(10) = ", Math.log10(10), "<br />");
+document.write("Math.max(10,5) = ", Math.max(10,5), "<br />");
+document.write("Math.min(10,45) = ", Math.min(10,45), "<br />");
+document.write("Math.pow(4,2) = ", Math.pow(4,2), "<br />");
+document.write("Math.sqrt(1000) = ", Math.sqrt(1000), "<br />");
+
+document.write("Random # (1-10) = ", Math.floor(Math.random() * 10 + 1), "<br />");
+document.write("Converter string: ", Number("3.14"), "<br />");
+document.write("Converted Int : ", parseInt("5"), "<br />");
+document.write("Converted Float : ", parseFloat("5.3"), "<br />");
+</script>
+
+<script id = "3">
+var randStr = "A long " + "string that " + "goes on and on";
+document.write(randStr,"<br />");
+document.write("String Length ", randStr.length + "<br />");
+document.write("Index for \"goes\" : ", randStr.indexOf("goes"), "<br />");
+document.write(randStr.slice(19, 23), "<br />");
+document.write(randStr.slice(19), "<br />");
+document.write(randStr.substr(19, 2), "<br />");
+
+document.write(randStr.replace("and on", "forever") + "<br />");
+document.write("At Index 2 : ", randStr.charAt(2) + "<br />");
+
+var randStrArray = randStr.split(" ");
+
+randStr = randStr.trim();
+
+document.write(randStr.toUpperCase() + "<br />");
+document.write(randStr.toLowerCase() + "<br />");
+
+document.write("Big : ", randStr.big(), "<br />");
+document.write("Bold : ", randStr.bold(), "<br />");
+document.write("Font Color : ", randStr.fontcolor("blue"), "<br />");
+document.write("Font Size : ", randStr.fontsize("8em"), "<br />");
+document.write("Italics : ", randStr.italics(), "<br />");
+document.write("Google : ", randStr.link("http://google.com"), "<br />");
+document.write("small : ", randStr.small(), "<br />");
+document.write("Strike : ", randStr.strike(), "<br />");
+document.write("Sub : ", randStr.sub(), "<br />");
+document.write("Sup : ", randStr.sup(), "<br />");
+
+</script>
+
+<script id = "4">
+var age = 5;
+if((age >= 5) && (age <= 6)){
+  document.write("Go to Kindergeaten" +"<br />");
+}else if(age > 18){
+  document.write("go to college" + "<br />");
+}else{
+  document.write("Go to grade ", age - 5, "<br />");
+}
+
+document.write("true || false: ", true || false, "<br />");
+document.write("!true: ", !true, "<br />");
+document.write("\"5\" == 5 = ", ("5" == 5), "<br />");
+document.write("\"5\" === 5 = ", ("5" === 5), "<br />");//compares type as well
+
+switch(age){
+  case 5:
+  case 6:
+    document.write("Go to kindergarten" +" <br />");
+    break;
+  default:
+    document.write("Subtract 5 from your age" + "<br />");
+}
+
+//turnary op
+var canIVote = (age >= 18) ? true : false;
+document.write("Can I Vote ", canIVote + "<br />");
+
+var i = 1;
+while(i <= 10){
+  document.write(i + "<br />");
+  i++;
+}
+/*
+do{
+  var guess = prompt("guess a number 1 - 20");
+}while(guess != 15);
+alert("you guessed correctly");
+*/
+for(j = 0; j <= 20; j++){
+  if((j % 2) == 0){
+    continue;
+  }
+  if(j === 15){
+    break;
+  }
+  document.write(j + "<br />");
+}
+
+var customer = {name : "Bob Thomas", address : "123 Main", balance : 50.50};
+for( k in customer){
+  document.write(customer[k] + "<br />");
+}
+
+</script>
+
+<script id = "5">
+
+var tomSmith = ["Tom Smith", "123 Main", 120.50];
+
+document.write("1st index", tomSmith[0] + "<br />");
+
+tomSmith[3] = "tSmith@aol.com";
+tomSmith.splice(2,1,"Pittsburgh", "PA");
+tomSmith.splice(4,1);
+document.write("Array : ", tomSmith.valueOf() + "<br />");
+document.write("Array : ", tomSmith.join(",") + "<br />");
+delete tomSmith[3];
+tomSmith.sort();
+
+var numbers = [4, 3, 9, 1, 20, 43];
+numbers.sort(function(x,y){return x - y});
+document.write("Num : ", numbers.toString() + "<br />");
+
+var combined= numbers.concat(tomSmith);
+
+tomSmith.pop();//remove last
+tomSmith.push("555-555-555", "US");//add to end
+tomSmith.shift();//delete first
+tomSmith.unshift("Tom Smith");//add a first
+for(i = 0; i < tomSmith.length; i++){
+  document.write(tomSmith[i]+ "<br />");
+}
+</script>
+
+<script id = "6">
+function inArray(arrayToCheck, value){
+  for(i = 0; i < arrayToCheck.length; i++){
+    if(arrayToCheck[i] === value){
+      return true;
+    }
+  }
+  return false;
+}
+
+var randArray = [1,2,3];
+document.write("In Array : ", inArray(randArray, 6) +" <br />");
+
+
+function times2(num){
+  var var2 = 2;
+  return num * var2;
+}
+function times3(num){
+  return num * 3;
+}
+function multiply(func, num){
+  return func(num);
+}
+
+document.write("2 * 15 = ", multiply(times2, 15) + "<br />");
+document.write("3 * 15 = ", multiply(times3, 15) + "<br />");
+
+var triple = function(num){
+  return num * 3;
+}
+document.write("3 * 45 = ", multiply(triple, 45) + "<br />");
+
+function getSum(){
+  var sum = 0;
+  for(i = 0; i < arguments.length; i++){
+    sum += arguments[i];
+  }
+  return sum;
+}
+
+document.write("Sum = ", getSum(1, 2, 3, 4, 5, 6) + "<br />");
+
+function times2(theArray){
+  var newArray = [];
+  for(i = 0; i < theArray.length; i++){
+    newArray.push(theArray[i] * 2);
+  }
+  return newArray;
+}
+
+document.write("array double : ", times2([1,2,3,4]).toString() + "<br />");
+
+function factorial(num){
+  if(num <= 1){
+    return 1;
+  }
+  else{
+    return num * factorial(num - 1);
+  }
+}
+
+document.write("factorial ", factorial(4) + "<br />");
+</script>
+
+<script>
+
+function openAlert(mess){
+  alert("something " + mess);
+}
+
+</script>
+<a href = "JavaScript:void(0)" onClick="alert('hello');">sayHello</a><br />
+<a href = "JavaScript:void(0)" onClick="openAlert('hello');">sayHello2</a><br />
+<a href = "JavaScript:void(0)"
+  onmouseover="this.style.color='red';"
+  onmouseout="this.style.color='green';"
+  onmousedown="this.text='Don\'t press to hard'"
+  ondblclick="this.text='You double clicked'"
+  onmouseup="this.text='thank you'">MakemeRED</a><br />
+
+
+<input type="text" id = "randInput"
+  onChange = "var dataEntered=document.getElementById('randInput').value;
+  alert('User Typed: ' + dataEntered)"
+
+<form action="#" id ="sampForm">
+  <input id = 'charInput' type= "text">
+  <p id = "keyData">keyData here</p>
+  <input type = "submit" value = "Submit">
+  <input type = "reset" value = "Reset">
+</form><br />
+
+<img src = "/home/ed/Pictures/music-note-circle-shape-brand_icon-icons.com_59119.png" id = "logo">
+<button id = "logoButton">getLogo</button>
+<input id = "mouseInput" type = "text" size = "30"></br />
+Mouse X: <input type = "text" id="mouseX"><br />
+Mouse Y: <input type = "text" id = "mouseY"><br />
+<button id = "clearInputs">clear</button>
+
+<script>
+
+function getChar(event){
+  if(event.which == null){
+    return String.fromCharCode(event.keyCode);
+  }else if(event.which != 0 && event.charCode !=0){
+    return String.fromCharCode(event.which);
+  }else{
+    return null;
+  }
+}
+
+document.getElementById("charInput").onkeypress =
+    function(event){
+      var char = getChar(event || window.event)
+      if(!char) return false;
+
+      document.getElementById("keyData").innerHTML = char + " was clicked";
+      return true;
+    }
+
+  document.getElementById('charInput').onfocus = function(event){
+    document.getElementById('keyData').innerHTML = "input gained focus";
+  }
+
+  document.getElementById("charInput").onselect = function(event){
+    document.getElementById("keyData").innerHTML = "text selected";
+  }
+
+  document.getElementById("logoButton").onclick = function(event){
+    document.getElementById("logo").className = "show";
+  }
+  document.getElementById("logo").onclick = function(event){
+    document.getElementById("logo").className = "hidden";
+  }
+  document.getElementById("logo").onmouseover = function(event){
+    document.getElementById("logo").src  = "/home/ed/Pictures/music.png";
+    document.getElementById("mouseInput").value = "mouse over image";
+  }
+  document.getElementById("logo").onmouseout = function(event){
+    document.getElementById("logo").src  = "/home/ed/Pictures/music-note-circle-shape-brand_icon-icons.com_59119.png";
+    document.getElementById("mouseInput").value = "mouse left image";
+  }
+  document.body.onmousemove =function(e){
+    e = e || window.event;
+
+    var pageX = e.pageX;
+    var pageY = e.pageY;
+
+    if(pageX === undefined){
+      pageX = e.clientX + document.body.scrollLeft + documentElement.scrollLeft;
+      pageY = e.clientY + document.body.scrollTop + documentElement.scrollTop;
+    }
+
+    document.getElementById("mouseX").value = pageX;
+    document.getElementById("mouseY").value = pageY;
+  };
+
+  document.getElementById("clearInputs").onclick = function(event){
+    var inputElements = document.getElementsByTagName('input');
+    for(var i = 0; i < inputElements.length; i++){
+      if(inputElements[i].type == "text"){
+        inputElements[i].value = "";
+      }
+    }
+  }
+</script>
+
+<div id = "sampDiv">
+  Also consider that Michael's branch is one of the few
+  that is successful and no one actually understands why.
+  We guess because Jim and Dwight are such exceptional salesmen
+  it's kept afloat. While that's probably true we also know they
+  still lose most of their business to the "big guys" and are individually
+  outsold by Danny.Maybe Kevin was cooking the books of the branch to
+  give his embezzlement time to accrue enough money.
+  When writer and director Guillermo del Toro’s Pacific Rim first hit
+  theaters in 2013, it wasn’t much of a success Stateside, despite the
+  passionate love of its small, dedicated following of fans. Instead,
+  the large blockbuster made most of its money internationally, leading
+  to the possibility of a sequel to be called into question for several years,
+  including from del Toro himself at points. But luckily, the world of Pacific
+  Rim will be returning to the big screen next year after all with Pacific Rim:
+  Uprising, though, it is worth noting that the highly-anticipated sequel, while
+  featuring the return of the Kaiju and Jaegers, will not have del Toro reprising
+  his role as director.Instead, Daredevil season 1 showrunner and experienced
+  TV writer/producer/director Steven S. DeKnight is the one at the helm of
+  Uprising, which replaces most of the original film’s stars with talented
+  up and coming actors like John Boyega, Scott Eastwood, and more. And with a
+  little less than a year to go until Pacific Rim: Uprising hits theaters,
+  the tentpole film has just reached a new milestone in its development
+  process.DeKnight has officially announced through his personal Instagram
+  account today, that principal photography on Uprising has officially
+  wrapped, as he and the rest of the film’s behind-the-scenes creative team
+  now begin moving into the post-production, editing phase. This news also
+  comes just a few days after Boyega, the film’s lead star and one of its main
+  producers, announced the end of his time shooting the film. Check out
+  DeKnight’s announcement for yourself down below:
+</div>
+<button id = "chgBkColor">Background Color</button>
+<button id = "chgBkImg">Background Image</button>
+<button id = "chgBorderStyle">Border Style</button>
+<button id = "chgBorderWidth">Border Width</button>
+<button id = "chgBorderColor">Border Color</button>
+
+<script>
+document.getElementById('chgBkColor').onclick = function(event){
+  document.getElementById('sampDiv').style.backgroundColor = "#EFDECD";
+}
+document.getElementById('chgBkImg').onclick = function(event){
+  //document.getElementById('sampDiv').style.backgroundColor = "#123456";
+  document.getElementById('sampDiv').style.backgroundImage = "url('/home/ed/Pictures/iPhone-7-Wallpaper-illustration-.jpg')";
+}
+document.getElementById('chgBorderStyle').onclick = function(event){
+  //document.getElementById('sampDiv').style.backgroundColor = "#123456";
+  document.getElementById('sampDiv').style.borderStyle = "solid";
+}
+document.getElementById('chgBorderWidth').onclick = function(event){
+  //document.getElementById('sampDiv').style.backgroundColor = "#123456";
+  document.getElementById('sampDiv').style.borderWidth = "thick";
+}
+document.getElementById('chgBorderColor').onclick = function(event){
+  //document.getElementById('sampDiv').style.backgroundColor = "#123456";
+  document.getElementById('sampDiv').style.borderColor = "red";
+}
+</script>
+
+<div id = "sampDiv">
+  <p>Also consider that Michael's branch is one of the few
+  that is successful and no one <em>actually understands why.
+  We guess because Jim and Dwight are</em> such exceptional salesmen
+  it's kept afloat. While that's probably true we also know they
+  still lose most of their business to the "big guys" and are individually
+  outsold by Danny.Maybe Kevin was cooking the books of the branch to
+  give his embezzlement time to accrue enough money.</p>
+  <p>When writer and director Guillermo del Toro’s Pacific Rim first hit
+  theaters in 2013, it wasn’t much of a success Stateside, despite the
+  passionate love of its small, dedicated following of fans. Instead,
+  the large blockbuster made most of its money internationally, leading
+  to the possibility of a sequel to be called into question for several years,
+  including from del Toro himself at points. But <b>luckily</b>, the world of Pacific
+  Rim will be returning to the big screen next year after all with Pacific Rim:
+  Uprising, though, it is worth noting that the highly-anticipated sequel, while
+  featuring the return of the Kaiju and Jaegers, will not have del Toro reprising
+  his role as director.</p>Instead, Daredevil season 1 showrunner and experienced
+  TV writer/producer/director Steven S. DeKnight is the one at the helm of
+  Uprising, which replaces most of the original film’s stars with talented
+  up and coming actors like John Boyega, Scott Eastwood, and more. And with a
+  little less than a year to go until Pacific Rim: Uprising <em>hits theaters,
+  the tentpole film has just reached a new milestone in its</em> development
+  process.DeKnight has officially announced through his personal Instagram
+  account today, that principal photography on Uprising has officially
+  wrapped, as he and the rest of the film’s behind-the-scenes <b>creative team
+  now begin moving into the post-production, editing phase. This </b>news also
+  comes just a few days after Boyega, the film’s lead star and one of its main
+  producers, announced the end of his time shooting the film. Check out
+  DeKnight’s announcement for yourself down below:</p>
+</div>
+<img src = "/home/ed/Pictures/music.png" id = "logo2" alt = "NTT logo"
+  height = "180" width = "180"><br />
+
+<button id = "goToGoogle">go to google</button>
+<button id = "forwardPage">Forward Page</button>
+<button id = "backPage">back Page</button>
+<button id = "reload">Reload</button>
+<br />
+<script>
+document.write("currentURL ", window.location.href, "<br />");
+document.write("currentHost ", window.location.hostname, "<br />");
+document.write("currentPAth ", window.location.pathname, "<br />");
+
+document.getElementById("goToGoogle").onclick = function(event){
+  window.location.href = "http://google.com"
+}
+
+document.getElementById("forwardPage").onclick = function(event){
+  history.forward();
+}
+document.getElementById("backPage").onclick = function(event){
+  history.back();
+}
+document.getElementById("reload").onclick = function(event){
+  window.location.reload();
+}
+
+var pElements = document.getElementsByTagName('p');
+pElements[1].style.backgroundColor='#EFDECD';
+
+document.childNodes[1].style.backgroundColor = "#FABCDE";
+var sampDiv2 = document.getElementById("sampDiv2");
+
+sampDiv2.childNodes[1].style.backgroundColor= "#E1E1E1";
+
+pElements[1].childNodes[0].style.backgroundColor = "#F2DA12";
+</script>
+
+<script>
+var cust1 = {
+  name: "John Smith",
+  street: "123 Main",
+  city: "Pittsburgh",
+  state: "PA",
+  email: "jsmith@aol.com",
+  balance: 120.50,
+  payDownBal: function(amtPaid){
+    this.balance -= amtPaid;
+  },
+  addToBal: function(amtCharged){
+    this.balance += amtCharged;
+  }
+};
+
+document.write("Customer NameL ", cust1.name, "<br />");
+
+cust1.street= "324 Main";
+
+document.write("Customer street ", cust1.street, "<br />");
+
+cust1.country = "US";
+
+document.write("Customer country ", cust1.country, "<br />");
+
+delete cust1.country;
+
+for(var prop in cust1){
+  if(cust1.hasOwnProperty(prop)){
+    document.write(prop, "<br />");
+  }
+}
+
+document.write("name in cust1 ", "name" in cust1, "<br />");
+
+function getInfo(cust){
+  return cust.name + " lives at " + cust.street + " in " +
+  cust.city + " " + cust.state + "email: " + cust.email
+  + "balance: $" + cust.balance;
+}
+
+document.write(getInfo(cust1), "<br />");
+
+cust1.payDownBal(120.50);
+cust1.addToBal(23.34);
+
+document.write(cust1.balance, "<br />");
+
+//generic customer
+function Customer(name, street, city, state, email, balance){
+  this.name = name;
+  this.street = street;
+  this.city = city;
+  this.state = state;
+  this.email = email;
+  this.balance = balance;
+  this.payDownBal= function(amntPaid){
+    this.balance -= amntPaid;
+  }
+  this.addToBal = function(amntCharged){
+    this.balance += amntCharged;
+  }
+}
+
+var cust2 = new Customer("Sally Smith", "234 Main", "Pittsburgh", "PA", "ssmith@aol.com", 0.00);
+
+cust2.addToBal(15.50);
+
+Customer.prototype.isCreditAvail = true;//static var
+Customer.prototype.toString = function(){
+  return this.name + " lives at " + this.street
+  + " in " + this.city + " " + this.state + "email: "
+  + this.email  + "balance: $" + this.balance.toFixed(2)
+  + " creditWorthy: "  + this.isCreditAvail;
+};
+
+document.write(cust2.toString());
+
+</script>
+
+<div>
+  Enter your Name:
+  <input id = "name" name = "name" type = "text" size = "30"
+  onblur = "isTheFieldEmpty(this, document.getElementById('name_help'))"/>
+  <span id = "name_help"></span>
+</div>
+
+<script>
+function editNodeText(regex, input, helpId, helpMessage){
+  if(!regex.test(input)){
+    if(helpId != null){
+      while(helpId.childNodes[0]){
+        helpId.removeChild(helpId.childNodes[0]);
+      }
+      helpId.appendChild(document.createTextNode(helpMessage));
+    }
+  }else{
+      if(helpId != null){
+        while(helpId.childNodes[0]){
+          helpId.removeChild(helpId.childNodes[0]);
+      }
+    }
+  }
+}
+
+
+function isTheFieldEmpty(inputField, helpId){
+  return editNodeText(/^[A-Za-z\.\' \-]{1,15}\s?[A-Za-z\.\' \-]{1,15}\s?[A-Za-z\.\' \-]{1,15}/, inputField.value, helpId, "Please enter a valid name.");
+}
+
+</script>
+
+
+<script>
+
+var custArray = ["tom", "bob", "sally", "sue"];
+
+var getCust = function(index){
+  if(index > custArray.length){
+    throw new RangeError("index must be >= 0 and <= " + custArray.length);
+  }else{
+    return custArray[index];
+  }
+}
+try{
+  document.write("customer", getCust(5), "<br />");
+}catch(ex){
+  if(ex instanceof RangeError){
+    document.write(ex.message + "<br />");
+  }
+}
+</script>
+
+<script>
+
+var customer ={
+  name:"Tom Smith",
+  speak: function(){
+    return "myName is " + this.name;
+  },
+
+  address:{
+    street:"123 Main",
+    city:"Pittsburgh",
+    state: "PA"
+  }
+};
+
+document.write(customer.speak() + "<br />");
+document.write(customer.name + " Lives at " + customer.address.street + "<br />");
+
+customer.address.country = "US";
+
+document.write(customer.address.country + "<br />");
+
+function Person(name, street){
+  this.name = name;
+  this.sreet = street;
+
+  this.info = function(){
+    return "MyName " +this.name + "street " + this.street;
+  }
+}
+
+var bobSmith = new Person("bob Smith", "234 main");
+
+document.write(bobSmith.info() + "<br />");
+
+document.write("Is Bob Smith a person?  " + (bobSmith instanceof Person) + "<br />");
+
+
+function changeName(person){
+  person.name = "sue smith";
+}
+
+changeName(bobSmith);
+
+document.write("Bob became : ", bobSmith.name +"<br />");
+
+var pers1 = new Person("Paul", "123 Main");
+var pers2 = new Person("Paul", "123 Main");
+
+document.write("are pers1 and pers2 equal? " + (pers1 === pers2), "<br />");
+</script>
+
+<script>
+
+function getSum(num1 , num2){
+  return num1 + num2;
+}
+
+document.write("Num of args ",getSum.length, "<br />");
+
+
+function Mammal(name){
+  this.name = name;
+  this.getInfo = function(){
+    return "My name is " + this.name;
+  }
+}
+
+Mammal.prototype.sound = "Grrr";
+Mammal.prototype.makeSound = function(){
+  return this.name + " says " + this.sound;
+}
+
+var grover = new Mammal("Grover");
+
+document.write(grover.makeSound() + "<br />");
+
+for(var prop in grover){
+  document.write(prop + " : " + grover[prop] + "<br />");
+}
+
+document.write("name Property of grover " + grover.hasOwnProperty("name")+ "<br />")
+document.write("sound Property of grover " + grover.hasOwnProperty("sound")+ "<br />")//sound is proto
+
+Array.prototype.inArray = function(item){
+  for( i = 0; i < this.length; i++){
+    if(this[i]=== item){
+      return true;
+    }
+  }
+  return false;
+}
+
+var sampArray = [1,2,3,4];
+
+document.write("Is 3 in Array ", sampArray.inArray(3), "<br />");
+
+</script>
+<script>
+function SecretCode(){
+  var secretNum = 78;//private since it is inside function
+
+  this.guessNum = function(num){
+    if(num > secretNum){
+      return "Lower";
+    }else if(num < secretNum){
+      return "Higher";
+    }else{
+      return "you got it";
+    }
+  }
+}
+
+var secret = new SecretCode();
+
+document.write("Value of secret " + secret.secretNum + "<br />");
+
+document.write("are you 70? " + secret.guessNum(70) +"<br />");
+document.write("are you 78? " + secret.guessNum(78) +"<br />");
+
+SecretCode.prototype.getSecret = function(){
+  return this.secretNum;
+}
+
+document.write("Return secret Num " + secret.getSecret() + "<br />");
+</script>
+
+<script>
+
+var address= {
+  street:  "No Street",
+  city: "No City",
+  state: "No state",
+
+  get getAddress(){
+    return this.street + ", " + this.city + ", " + this.state;
+  },
+
+  set setAddress(theAddress){
+    var parts = theAddress.toString().split(", ");
+    this.street = parts[0] || "";
+    this.city = parts[1] || "";
+    this.state = parts[2] || "";
+  }
+}
+  address.setAddress = "123 Main, Milwaukee, WI";
+
+  document.write("Address: ", address.getAddress + "<br />");
+  document.write("City: ", address.city + "<br />");
+
+
+  function Coordinates(){
+    this.lattitude = 0;
+    this.longitude = 0;
+  }
+
+  Object.__defineGetter__.call(Coordinates.prototype, "getCoords", function(){
+    return "Lat : " + this.lattitude + "Long : " + this.longitude;
+  });
+
+  Object.__defineSetter__.call(Coordinates.prototype, "setCoords", function(coords){
+    var parts = coords.toString().split(", ");
+
+    this.lattitude = parts[0];
+    this.longitude = parts[1];
+  });
+
+  var testCoords = new Coordinates();
+
+  testCoords.setCoords = "40.71, 12,34";
+  document.write("Coordinates : " + testCoords.getCoords + "<br />");
+
+  //define Property
+  function Point(){
+    this.xPos = 0;
+    this.yPos = 0;
+  }
+
+  Object.defineProperty(Point.prototype, "pointPos", {
+    get: function(){
+      return "X : " + this.xPos + " Y : " + this.yPos;
+    },
+    set: function(thePoint){
+      var parts = thePoint.toString().split(", ");
+
+      this.xPos = parts[0] || "";
+      this.yPos = parts[1] || "";
+    }
+  });
+
+
+  var aPoint = new Point();
+  aPoint.pointPos ="100, 200";
+  document.write("Point Position: " + aPoint.pointPos + "<br />");
+
+  var Circle = function(radius){
+    this._radius = radius;
+  }
+//constructor setter/getters;
+  Circle.prototype = {
+    set radius(radius){this._radius = radius;},
+    get radius(){return this._radius;},
+    get area(){return Math.PI * (this._radius * this._radius);}
+  }
+
+  var circle = new Circle(10);
+
+  circle.radius = 15;
+  document.write("Radius: " + circle.radius + "Area : " + circle.area.toFixed(2) + "<br />");
+
+</script>
+
+<script>
+
+//call prototype when inheriting
+
+function Animal(){
+  this.name = "Animal";
+
+  this.toString = function(){
+    return "My name " + this.name;
+  };
+}
+
+function Canine(){
+  this.name = "Canine";
+}
+
+function Wolf(){
+  this.name = "wolf";
+}
+
+Canine.prototype = new Animal();
+
+Wolf.prototype = new Canine();
+
+Canine.prototype.constructor = Canine;
+Wolf.prototype.constructor = Wolf;
+
+var arcticWolf = new Wolf();
+
+document.write(arcticWolf.toString() + "<br />");
+
+document.write("Is wolf an animal " + (arcticWolf instanceof Animal) + "<br />");
+Animal.prototype.sound = "Grrr";
+Animal.prototype.getSound = function(){
+  return this.name + " says " + this.sound;
+}
+
+Canine.prototype.sound = "Woof";
+Wolf.prototype.sound = "Grr Woof";
+
+document.write(arcticWolf.getSound() + "<br />");
+
+
+function Rodent(){
+  this.name = "Rodent";
+}
+
+function Rat(){
+  this.name = "Rat";
+}
+
+Rodent.prototype = new Animal();
+
+Rat.prototype = Rodent.prototype;
+Rodent.prototype.constructor = Rodent;
+Rat.prototype.constructor = Rat;
+
+var caneRat = new Rat();
+document.write(caneRat.toString() + "<br />");
+
+//IntermediateFunction inheritance
+
+function extend(Child, Parent){
+  var Temp = function(){};
+
+  Temp.prototype = Parent.prototype;
+  Child.prototype = new Temp();
+  Child.prototype.constructor = Child;
+}
+
+function Deer(){
+  this.name = "Deer";
+  this.sound = "snort";
+}
+
+extend(Deer, Animal);
+
+var elk = new Deer();
+
+document.write(elk.getSound() + "<br />" );
+
+function Vehicle(name){
+  this.name = "Vehicle";
+}
+
+Vehicle.prototype = {
+  drive: function(){
+    return this.name + " drives forward";
+  },
+  stop: function(){
+    return this.name + " stops";
+  }
+}
+
+function Truck(name){
+  this.name = name;
+}
+
+Truck.prototype = new Vehicle();
+Truck.prototype.constructor = Truck;
+
+Truck.prototype.drive = function(){
+  var drivMsg = Vehicle.prototype.drive.apply(this);
+
+  return drivMsg += " through a field";
+}
+
+var jeep = new Truck("jeep");
+
+document.write(jeep.drive() + "<br />");
+document.write(jeep.stop() + "<br />");
+
+</script>
+
+<script>
+//singleton pattern only allow one object;
+
+function Hero(name){
+  if(typeof Hero.instance === 'object'){
+    return Hero.instance;
+  }
+
+  this.name = name;
+  Hero.instance = this;
+  return this;
+}
+
+var derHero = Hero("Derek");
+document.write("Our hero is  ", derHero.name + "<br />");
+var paulHero = Hero("Paul");
+document.write("New hero  ", paulHero.name + "<br />");
+
+
+</script>
+
+<script>
+//factory patter
+
+function Sword(desc){
+  this.weaponType = "Sword";
+  this.metal = desc.metal || "Steel";
+  this.style = desc.style || "Longsword";
+  this.hasMagic = desc.hasMagic || false;
+}
+
+
+function Bow(desc){
+  this.weaponType = "Bow";
+  this.material = desc.metal || "wood";
+  this.style = desc.style || "Longbow";
+  this.hasMagic = desc.hasMagic || false;
+}
+
+function weaponFactory(){
+}
+
+weaponFactory.prototype.makeWeapon = function(desc){
+  var weaponClass = null;
+
+  if(desc.weaponType === "Sword"){
+    weaponClass = Sword;
+  }else if(desc.weaponType === "Bow"){
+    weaponClass = Bow;
+  }else{
+    return false;
+  }
+  return new weaponClass(desc);
+}
+
+var myWeaponFactory = new weaponFactory();
+
+var bladeFist = myWeaponFactory.makeWeapon({
+  weaponType: "Sword",
+  metal: "Dark Iron",
+  style: "Scythe",
+  hasMagic: true
+});
+
+document.write(bladeFist.weaponType + " of type " + bladeFist.style +
+" created from " + bladeFist.metal + "<br />");
+
+</script>
+
+<script>
+//decorator pattern
+
+function Pizza(price){
+  this.price = price || 10;
+}
+
+Pizza.prototype.getPrice = function(){
+  return this.price;
+}
+
+function ExtraCheese(pizza){
+  var prevPrice =  pizza.price;
+
+  pizza.price = prevPrice + 1;
+}
+
+var myPizza = new Pizza(10);
+
+ExtraCheese(myPizza);
+
+document.write("Cost of Pizza : $" +  myPizza.getPrice() + "<br />");
+
+</script>
+
+<script>
+//observer pattern
+var Observable = function(){
+  this.subscribers = [];
+}
+
+Observable.prototype = {
+  subscribe: function(subscriber){
+    this.subscribers.push(subscriber);
+  },
+
+  unsubscribe: function(unsubscriber){
+    for( i  = 0; i < this.subscribers.length; i++){
+      if(this.subscribers[i] === unsubscriber){
+        this.subscribers.splice(i, 1);
+        return unsubscriber.name;
+      }
+    }
+  },
+
+  publish: function(data){
+    for(i = 0; i < this.subscribers.length; i++){
+      this.subscribers[i].receivedData(data);
+    }
+  }
+};
+
+var OrganFanny = {
+  name : "Organ Fanny",
+  receivedData : function(data){
+    document.write(this.name + " received your info " + data + "<br />");
+  }
+}
+var boldmanYaks = {
+  name : "Boldman Yaks",
+  receivedData : function(data){
+    document.write(this.name + " received your info " + data + "<br />");
+  }
+}
+
+observable = new Observable();
+
+observable.subscribe(OrganFanny);
+observable.subscribe(boldmanYaks);
+
+observable.publish("IBM at 145.30");
+
+document.write(observable.unsubscribe(OrganFanny) + " unsubscribed <br />");
+observable.publish("IBM at 156.77");
+
+</script>
+-->
 </body>
 
 </html>
